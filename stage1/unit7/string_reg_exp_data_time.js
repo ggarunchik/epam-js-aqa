@@ -12,7 +12,7 @@ console.log(newResult)
 let currentDate = new Date()
 let dd = String(currentDate.getDate())
 let mm = String(currentDate.getMonth() + 1)
-let yyyy = currentDate.getFullYear();
+let yyyy = currentDate.getFullYear()
 
-currentDate = mm + '/' + dd + '/' + yyyy;
+currentDate = mm + '/' + dd + '/' + yyyy
 console.log(currentDate)
