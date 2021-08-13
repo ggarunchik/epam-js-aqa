@@ -9,7 +9,7 @@ car.color = 'green'
 
 // В объект car добавить свойство power, которое является функцией и выводит в консоль мощность двигателя
 car.power = function () {
-     return console.log('Лошадиных сил: ' + this.carPower)
+    console.log('Лошадиных сил: ' + this.carPower)
 }
 
 car.power()
@@ -18,19 +18,19 @@ car.power()
 const appleAmount = 2567
 const pearAmount = 1452
 
-function amountOfFruitsReceived(appleAmount, pearAmount) {
+function getAmountOfFruits(appleAmount, pearAmount) {
     return +appleAmount + +pearAmount
 }
 
-console.log('Всего приняли груш и яблок: ' + amountOfFruitsReceived(appleAmount, pearAmount))
+console.log('Всего приняли груш и яблок: ' + getAmountOfFruits(appleAmount, pearAmount))
 
 // В терминале оплаты сохранено ваше имя, напишите функцию для определения имени в терминале(если вы ввели ваше имя, то привет + имя, если нет, то нет такого имени)
 const userName = 'Gleb'
 
-function verifyUser(userInputName = 'Имя не введено') {
-    if (userInputName == userName) {
+function verifyUser(userInputName) {
+    if (userInputName === userName) {
         console.log('Привет ' + userInputName)
-    }else {
+    } else {
         console.log('Извините, но такого имени нет')
     }
 }
@@ -46,14 +46,9 @@ findTypeOf(userName)
 
 // Напишите функцию, которая определяет является ли число простым или нет
 function isPrimeNumber(valueToCheck) {
-    if(valueToCheck <= 1) {
-        return false
-    }
-    for (let i = 2; i < valueToCheck; i++) {
-        if (valueToCheck % i === 0) {
-            return false
-        }
-        return true  
-    }
+    for(let i = 2; i < valueToCheck; i++)
+      if(valueToCheck % i === 0) return false
+    return valueToCheck > 1
 }
-console.log(isPrimeNumber(107))
+
+console.log(isPrimeNumber(1))
