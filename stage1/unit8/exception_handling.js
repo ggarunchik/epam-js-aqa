@@ -10,13 +10,11 @@ try {
 let x = 1
 let y = 0
 
-if (!y) {
-    throw new Error ('Hа ноль делить нельзя')
+try {
+    let c = x / y
+    if (c == Infinity || c ==  Nan) {
+        throw new Error ()
+    }
+} catch (e) {
+    console.log('Hа ноль делить нельзя' + e.stack)
 }
-
-let result = x / y
-
-
-
-
-
