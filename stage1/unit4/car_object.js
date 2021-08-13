@@ -5,11 +5,9 @@ class Car {
         this.color = color,
         this.carPower = carPower
     }
-
     power() {
         return this.carPower
     } 
-
 }
 
 let newCar = new Car('volvo', 'black', 245)
