@@ -46,8 +46,8 @@ findTypeOf(userName)
 
 // Напишите функцию, которая определяет является ли число простым или нет
 function isPrimeNumber(valueToCheck) {
-    for(let i = 2; i < valueToCheck; i++)
-      if(valueToCheck % i === 0) return false
+    for (let i = 2; i < valueToCheck; i++)
+      if (valueToCheck % i === 0) return false
     return valueToCheck > 1
 }
 
