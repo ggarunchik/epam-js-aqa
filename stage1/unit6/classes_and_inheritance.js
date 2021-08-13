@@ -12,9 +12,9 @@ class Animal {
 }
 
 class Cat extends Animal {
-    constructor (name, color) {
+    constructor (name, colour) {
         super(name)
-        this.color
+        this.colour = colour
     }
 }
 
